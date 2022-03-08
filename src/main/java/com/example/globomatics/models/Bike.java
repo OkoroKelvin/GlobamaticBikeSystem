@@ -1,5 +1,6 @@
 package com.example.globomatics.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -20,7 +21,10 @@ public class Bike {
     private String model;
     private String serialNumber;
     private BigDecimal purchasePrice;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "MM-dd-yyyy")
     private Date purchaseDate;
+
     private boolean contact;
 
 }
