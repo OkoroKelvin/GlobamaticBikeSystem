@@ -33,8 +33,12 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-
-
+        <!-- https://jmaven.com/maven/com.auth0/auth0-spring-security-api -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>spring-security-auth0</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
